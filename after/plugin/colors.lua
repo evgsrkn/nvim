@@ -1,0 +1,25 @@
+function ColorMyPencils(color)
+	color = color or "monokai"
+	vim.cmd.colorscheme(color)
+	vim.o.termguicolors = true
+    vim.cmd([[highlight Normal guibg=NONE ctermbg=NONE]])
+    vim.cmd([[highlight LineNr guibg=NONE]])
+    vim.cmd([[highlight SignColumn guibg=NONE]])
+    vim.cmd([[highlight BufferTabpageFill guibg=NONE]])
+    vim.cmd([[highlight BufferDefaultCurrent guibg=NONE]])
+    vim.cmd([[highlight BufferDefaultCurrentMod guibg=NONE]])
+    vim.cmd([[highlight BufferDefaultCurrentSign guibg=NONE]])
+    vim.cmd([[highlight BufferDefaultCurrentSignRight guibg=NONE]])
+    vim.cmd([[highlight BufferDefaultCurrentIcon guibg=NONE]])
+    vim.cmd([[highlight BufferDefaultCurrentERROR guibg=NONE]])
+    vim.cmd([[highlight BufferDefaultCurrentHINT guibg=NONE]])
+    vim.cmd([[highlight BufferDefaultCurrentINFO guibg=NONE]])
+    vim.cmd([[highlight BufferDefaultCurrentWARN guibg=NONE]])
+    vim.cmd([[highlight BufferDefaultCurrentIcon guibg=NONE]])
+    vim.cmd([[highlight BufferDefaultVisible guibg=NONE]])
+    vim.cmd([[highlight BufferDefaultVisibleMod guibg=NONE]])
+    vim.cmd([[highlight BufferDefaultVisibleSign guibg=NONE]])
+    vim.cmd([[highlight BufferDefaultVisibleSignRight guibg=NONE]])
+end
+
+ColorMyPencils()
