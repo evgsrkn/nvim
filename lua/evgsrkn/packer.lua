@@ -1,14 +1,28 @@
 vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function(use)
-  use 'christoomey/vim-tmux-navigator'
+  use 'jaredgorski/spacecamp'
+  use 'agude/vim-eldar'
+  use 'luisiacc/gruvbox-baby'
   use 'alvan/vim-closetag'
+  use "blazkowolf/gruber-darker.nvim"
   use 'folke/neodev.nvim'
+  use 'yorickpeterse/happy_hacking.vim'
+  use 'tzachar/local-highlight.nvim'
+  use 'numToStr/Comment.nvim'
   use {
     "folke/trouble.nvim",
     config = function()
       require("trouble").setup { icons = false }
     end
+  }
+  use {
+    'mrcjkb/haskell-tools.nvim',
+    requires = {
+      'nvim-lua/plenary.nvim',
+    },
+    branch = '2.x.x', -- Recommended
+    ft = { 'haskell', 'lhaskell', 'cabal', 'cabalproject' },
   }
   use {
     'VonHeikemen/lsp-zero.nvim',
@@ -29,6 +43,8 @@ return require('packer').startup(function(use)
       { 'rafamadriz/friendly-snippets' },
     }
   }
+  use 'mbbill/undotree'
+  use 'tpope/vim-fugitive'
   use 'olexsmir/gopher.nvim'
   use 'mfussenegger/nvim-dap'
   use 'patstockwell/vim-monokai-tasty'
@@ -57,7 +73,11 @@ return require('packer').startup(function(use)
   }
   use {
     "windwp/nvim-autopairs",
-    config = function() require("nvim-autopairs").setup {} end
+    config = function() require("nvim-autopairs").setup {
+      enable_bracket_in_quote = false,
+      enable_afterquote = true,
+      enable_check_bracket_line = false,
+    } end
   }
   use{
     'nvim-telescope/telescope.nvim', tag = '0.1.1',

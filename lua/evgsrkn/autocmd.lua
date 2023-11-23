@@ -19,7 +19,7 @@ autocmd('TextYankPost', {
 --- remove all trailing whitespace on save
 autocmd('BufWritePre', {
   group = ysomad_group,
-  pattern = '*',
+  pattern = '*.go,*.rs,*.ts,*.js,*.css,*.html',
   command = [[%s/\s\+$//e]],
 })
 
@@ -65,3 +65,4 @@ autocmd('BufWritePre', {
     end
   end
 })
+
