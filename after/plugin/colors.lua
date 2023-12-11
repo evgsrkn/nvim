@@ -1,9 +1,9 @@
 function ColorMyPencils(color)
-  -- vim.g.gruvbox_baby_background_color = "dark"
 	color = color or "gruber-darker"
 	vim.cmd.colorscheme(color)
   vim.o.termguicolors = true
   vim.cmd([[highlight Typedef guifg=#d4e5fg]])
+  vim.cmd([[highlight TreesitterContext guibg=#2c2c2c]])
   -- vim.cmd([[highlight Normal guibg=#202020 ctermbg=NONE]])
   -- vim.cmd([[highlight LineNr guibg=NONE]])
   -- vim.cmd([[highlight SignColumn guibg=NONE]])

@@ -119,11 +119,6 @@ _G.packer_plugins = {
     path = "/home/srkn/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
-  ["copilot.vim"] = {
-    loaded = true,
-    path = "/home/srkn/.local/share/nvim/site/pack/packer/start/copilot.vim",
-    url = "https://github.com/github/copilot.vim"
-  },
   ["friendly-snippets"] = {
     loaded = true,
     path = "/home/srkn/.local/share/nvim/site/pack/packer/start/friendly-snippets",
@@ -139,27 +134,10 @@ _G.packer_plugins = {
     path = "/home/srkn/.local/share/nvim/site/pack/packer/start/gruber-darker.nvim",
     url = "https://github.com/blazkowolf/gruber-darker.nvim"
   },
-  ["gruvbox-baby"] = {
-    loaded = true,
-    path = "/home/srkn/.local/share/nvim/site/pack/packer/start/gruvbox-baby",
-    url = "https://github.com/luisiacc/gruvbox-baby"
-  },
-  ["happy_hacking.vim"] = {
-    loaded = true,
-    path = "/home/srkn/.local/share/nvim/site/pack/packer/start/happy_hacking.vim",
-    url = "https://github.com/yorickpeterse/happy_hacking.vim"
-  },
   harpoon = {
     loaded = true,
     path = "/home/srkn/.local/share/nvim/site/pack/packer/start/harpoon",
     url = "https://github.com/theprimeagen/harpoon"
-  },
-  ["haskell-tools.nvim"] = {
-    loaded = false,
-    needs_bufread = true,
-    only_cond = false,
-    path = "/home/srkn/.local/share/nvim/site/pack/packer/opt/haskell-tools.nvim",
-    url = "https://github.com/mrcjkb/haskell-tools.nvim"
   },
   ["indent-blankline.nvim"] = {
     loaded = true,
@@ -176,6 +154,11 @@ _G.packer_plugins = {
     path = "/home/srkn/.local/share/nvim/site/pack/packer/start/lsp-zero.nvim",
     url = "https://github.com/VonHeikemen/lsp-zero.nvim"
   },
+  ["lsp_signature.nvim"] = {
+    loaded = true,
+    path = "/home/srkn/.local/share/nvim/site/pack/packer/start/lsp_signature.nvim",
+    url = "https://github.com/ray-x/lsp_signature.nvim"
+  },
   ["lualine.nvim"] = {
     loaded = true,
     path = "/home/srkn/.local/share/nvim/site/pack/packer/start/lualine.nvim",
@@ -191,18 +174,13 @@ _G.packer_plugins = {
     path = "/home/srkn/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
   },
-  ["monokai.nvim"] = {
-    loaded = true,
-    path = "/home/srkn/.local/share/nvim/site/pack/packer/start/monokai.nvim",
-    url = "https://github.com/tanvirtin/monokai.nvim"
-  },
   ["neodev.nvim"] = {
     loaded = true,
     path = "/home/srkn/.local/share/nvim/site/pack/packer/start/neodev.nvim",
     url = "https://github.com/folke/neodev.nvim"
   },
   ["nvim-autopairs"] = {
-    config = { "\27LJ\2\nä\1\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\1K\0\1\0\1\0\3\22enable_afterquote\2\30enable_check_bracket_line\1\28enable_bracket_in_quote\1\nsetup\19nvim-autopairs\frequire\0" },
+    config = { "\27LJ\2\nä\1\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\1K\0\1\0\1\0\3\22enable_afterquote\2\28enable_bracket_in_quote\1\30enable_check_bracket_line\1\nsetup\19nvim-autopairs\frequire\0" },
     loaded = true,
     path = "/home/srkn/.local/share/nvim/site/pack/packer/start/nvim-autopairs",
     url = "https://github.com/windwp/nvim-autopairs"
@@ -232,10 +210,15 @@ _G.packer_plugins = {
     path = "/home/srkn/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
+  ["nvim-treesitter-context"] = {
+    loaded = true,
+    path = "/home/srkn/.local/share/nvim/site/pack/packer/start/nvim-treesitter-context",
+    url = "https://github.com/nvim-treesitter/nvim-treesitter-context"
+  },
   ["nvim-web-devicons"] = {
     loaded = true,
     path = "/home/srkn/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
-    url = "https://github.com/nvim-tree/nvim-web-devicons"
+    url = "https://github.com/kyazdani42/nvim-web-devicons"
   },
   ["packer.nvim"] = {
     loaded = true,
@@ -262,11 +245,6 @@ _G.packer_plugins = {
     path = "/home/srkn/.local/share/nvim/site/pack/packer/start/rust.vim",
     url = "https://github.com/rust-lang/rust.vim"
   },
-  spacecamp = {
-    loaded = true,
-    path = "/home/srkn/.local/share/nvim/site/pack/packer/start/spacecamp",
-    url = "https://github.com/jaredgorski/spacecamp"
-  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "/home/srkn/.local/share/nvim/site/pack/packer/start/telescope.nvim",
@@ -288,11 +266,6 @@ _G.packer_plugins = {
     path = "/home/srkn/.local/share/nvim/site/pack/packer/start/vim-closetag",
     url = "https://github.com/alvan/vim-closetag"
   },
-  ["vim-eldar"] = {
-    loaded = true,
-    path = "/home/srkn/.local/share/nvim/site/pack/packer/start/vim-eldar",
-    url = "https://github.com/agude/vim-eldar"
-  },
   ["vim-floaterm"] = {
     loaded = true,
     path = "/home/srkn/.local/share/nvim/site/pack/packer/start/vim-floaterm",
@@ -303,37 +276,27 @@ _G.packer_plugins = {
     path = "/home/srkn/.local/share/nvim/site/pack/packer/start/vim-fugitive",
     url = "https://github.com/tpope/vim-fugitive"
   },
-  ["vim-monokai-tasty"] = {
-    loaded = true,
-    path = "/home/srkn/.local/share/nvim/site/pack/packer/start/vim-monokai-tasty",
-    url = "https://github.com/patstockwell/vim-monokai-tasty"
-  },
   ["vim-vsnip"] = {
     loaded = true,
     path = "/home/srkn/.local/share/nvim/site/pack/packer/start/vim-vsnip",
     url = "https://github.com/hrsh7th/vim-vsnip"
+  },
+  ["zen-mode.nvim"] = {
+    loaded = true,
+    path = "/home/srkn/.local/share/nvim/site/pack/packer/start/zen-mode.nvim",
+    url = "https://github.com/folke/zen-mode.nvim"
   }
 }
 
 time([[Defining packer_plugins]], false)
+-- Config for: nvim-autopairs
+time([[Config for nvim-autopairs]], true)
+try_loadstring("\27LJ\2\nä\1\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\1K\0\1\0\1\0\3\22enable_afterquote\2\28enable_bracket_in_quote\1\30enable_check_bracket_line\1\nsetup\19nvim-autopairs\frequire\0", "config", "nvim-autopairs")
+time([[Config for nvim-autopairs]], false)
 -- Config for: trouble.nvim
 time([[Config for trouble.nvim]], true)
 try_loadstring("\27LJ\2\nC\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\1K\0\1\0\1\0\1\nicons\1\nsetup\ftrouble\frequire\0", "config", "trouble.nvim")
 time([[Config for trouble.nvim]], false)
--- Config for: nvim-autopairs
-time([[Config for nvim-autopairs]], true)
-try_loadstring("\27LJ\2\nä\1\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\1K\0\1\0\1\0\3\22enable_afterquote\2\30enable_check_bracket_line\1\28enable_bracket_in_quote\1\nsetup\19nvim-autopairs\frequire\0", "config", "nvim-autopairs")
-time([[Config for nvim-autopairs]], false)
-vim.cmd [[augroup packer_load_aucmds]]
-vim.cmd [[au!]]
-  -- Filetype lazy-loads
-time([[Defining lazy-load filetype autocommands]], true)
-vim.cmd [[au FileType cabalproject ++once lua require("packer.load")({'haskell-tools.nvim'}, { ft = "cabalproject" }, _G.packer_plugins)]]
-vim.cmd [[au FileType cabal ++once lua require("packer.load")({'haskell-tools.nvim'}, { ft = "cabal" }, _G.packer_plugins)]]
-vim.cmd [[au FileType haskell ++once lua require("packer.load")({'haskell-tools.nvim'}, { ft = "haskell" }, _G.packer_plugins)]]
-vim.cmd [[au FileType lhaskell ++once lua require("packer.load")({'haskell-tools.nvim'}, { ft = "lhaskell" }, _G.packer_plugins)]]
-time([[Defining lazy-load filetype autocommands]], false)
-vim.cmd("augroup END")
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then
