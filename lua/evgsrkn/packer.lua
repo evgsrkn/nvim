@@ -41,7 +41,7 @@ return require('packer').startup(function(use)
 
   use 'mbbill/undotree'
   use 'tpope/vim-fugitive'
-  use 'olexsmir/gopher.nvim'
+  use 'fatih/vim-go'
   use 'wbthomason/packer.nvim'
   use 'rust-lang/rust.vim'
   use 'voldikss/vim-floaterm'
@@ -64,7 +64,7 @@ return require('packer').startup(function(use)
     } end
   }
   use{
-    'nvim-telescope/telescope.nvim', tag = '0.1.1',
+    'nvim-telescope/telescope.nvim',
     requires = { {'nvim-lua/plenary.nvim'} }
   }
   use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
