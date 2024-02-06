@@ -2,10 +2,19 @@ vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function(use)
   use 'alvan/vim-closetag'
+  use 'f-person/git-blame.nvim'
   use "blazkowolf/gruber-darker.nvim"
   use 'folke/neodev.nvim'
   use 'tzachar/local-highlight.nvim'
   use 'numToStr/Comment.nvim'
+  use {
+    'folke/todo-comments.nvim',
+    dependencies = { "nvim-lua/plenary.nvim" },
+    opts = {},
+    config = function()
+      require("todo-comments").setup{}
+    end
+  }
   use {
     "folke/trouble.nvim",
     config = function()

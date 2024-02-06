@@ -31,3 +31,11 @@ vim.opt.updatetime = 50
 vim.opt.colorcolumn = "80"
 
 vim.g.rustfmt_autosave = 1
+
+vim.g.go_def_mapping_enabled = 0
+vim.g.go_doc_keywordprg_enabled = 0
+
+vim.g.gitblame_enabled = 0
+
+vim.api.nvim_set_hl(0, "@text.note", { link = "Todo" })
+vim.api.nvim_set_hl(0, '@lsp.type.comment', {})

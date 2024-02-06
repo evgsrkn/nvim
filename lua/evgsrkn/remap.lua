@@ -18,3 +18,16 @@ map('i', '<C-b>', '<ESC>^i', opts) -- beginning of line
 
 map('v', '<', '<gv', opts)
 map('v', '>', '>gv', opts)
+
+-- copy and yanks to clipboard
+map("v", "<leader>y", '"+y', opts)
+map("n", "<leader>Y", '"+yg_', opts)
+map("n", "<leader>y", '"+y', opts)
+map("n", "<leader>yy", '"+yy', opts)
+
+map("n", "<leader>p", '"+p', opts)
+map("n", "<leader>P", '"+P', opts)
+map("v", "<leader>p", '"+p', opts)
+map("v", "<leader>P", '"+P', opts)
+
+map("n", "<leader>gb", ":GitBlameToggle<CR>", opts)
