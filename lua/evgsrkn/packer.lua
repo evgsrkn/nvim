@@ -7,6 +7,8 @@ return require('packer').startup(function(use)
   use 'folke/neodev.nvim'
   use 'tzachar/local-highlight.nvim'
   use 'numToStr/Comment.nvim'
+  use 'norcalli/nvim-colorizer.lua'
+  use 'lambdalisue/suda.vim'
   use {
     'folke/todo-comments.nvim',
     dependencies = { "nvim-lua/plenary.nvim" },
@@ -50,7 +52,7 @@ return require('packer').startup(function(use)
 
   use 'mbbill/undotree'
   use 'tpope/vim-fugitive'
-  use 'fatih/vim-go'
+  use 'ray-x/go.nvim'
   use 'wbthomason/packer.nvim'
   use 'rust-lang/rust.vim'
   use 'voldikss/vim-floaterm'
@@ -58,6 +60,7 @@ return require('packer').startup(function(use)
   use 'simrat39/rust-tools.nvim'
   use "lukas-reineke/indent-blankline.nvim"
   use { "rcarriga/nvim-dap-ui", requires = {"mfussenegger/nvim-dap"} }
+  use 'theHamsta/nvim-dap-virtual-text'
 
   use { 'kyazdani42/nvim-web-devicons' }
   use {

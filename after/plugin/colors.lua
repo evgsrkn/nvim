@@ -28,6 +28,9 @@ function ColorMyPencils(color)
   -- vim.cmd([[highlight BufferDefaultVisibleMod guibg=NONE]])
   -- vim.cmd([[highlight BufferDefaultVisibleSign guibg=NONE]])
   -- vim.cmd([[highlight BufferDefaultVisibleSignRight guibg=NONE]])
+  vim.api.nvim_set_hl(0, 'DapBreakpoint', { ctermbg = 0, fg = '#993939', bg = '#222222' })
+  vim.api.nvim_set_hl(0, 'DapLogPoint', { ctermbg = 0, fg = '#61afef', bg = '#222222' })
+  vim.api.nvim_set_hl(0, 'DapStopped', { ctermbg = 0, fg = '#98c379', bg = '#222222' })
 end
 
 ColorMyPencils()

@@ -39,3 +39,10 @@ vim.g.gitblame_enabled = 0
 
 vim.api.nvim_set_hl(0, "@text.note", { link = "Todo" })
 vim.api.nvim_set_hl(0, '@lsp.type.comment', {})
+
+vim.keymap.set("x", "<leader>p", [["_dP]])
+vim.keymap.set({"n", "v"}, "<leader>y", [["+y]])
+vim.keymap.set("n", "<leader>Y", [["+Y]])
+vim.keymap.set({"n", "v"}, "<leader>d", [["_d]])
+
+vim.keymap.set("i", "<C-c>", "<Esc>")
