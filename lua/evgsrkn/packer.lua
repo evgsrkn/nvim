@@ -19,14 +19,21 @@ return require('packer').startup(function(use)
   }
   use {
     "folke/trouble.nvim",
+    opts = {
+      win = {
+        wo = {
+          wrap = true,
+        },
+      },
+    },
     config = function()
-      require("trouble").setup { icons = false }
+      require("trouble").setup{}
     end
   }
 
   use {
     'VonHeikemen/lsp-zero.nvim',
-    branch = 'v1.x',
+    branch = 'v3.x',
     requires = {
       -- LSP
       { 'neovim/nvim-lspconfig' },

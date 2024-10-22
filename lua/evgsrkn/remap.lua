@@ -5,8 +5,14 @@ vim.keymap.set("n", "<Leader>e", ":Explore<CR>")
 local map = vim.api.nvim_set_keymap
 local opts = { noremap = true, silent = true }
 
+-- Fill struct
+map("n", "<leader>fs", "<cmd>GoFillStruct<CR>", { noremap = true })
+
 -- Rename variable
 map("n", "<leader>rn", "<cmd>lua vim.lsp.buf.rename()<CR>", { noremap = true })
+
+-- Restart lsp
+map("n", "<leader>lr", "<cmd>LspRestart<CR>", { noremap = true })
 
 map('n', '<C-h>', '<C-w>h', opts)
 map('n', '<C-j>', '<C-w>j', opts)
